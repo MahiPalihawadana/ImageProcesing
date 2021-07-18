@@ -8,8 +8,12 @@ Created on Sun Jul 18 18:49:50 2021
 #basics opencv
 
 import cv2
-img = cv2.imread("img3.jpg",1) 
+
 from matplotlib import pyplot as plt
+
+img = cv2.imread("img3.jpg",1) 
+grey_img=cv2.imread("img3.jpg",0)
+
 
 plt.imshow(img)
 
@@ -19,3 +23,10 @@ cv2.imshow("original",img)
 cv2.imshow("resized", resized)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
+cv2.imshow("color pic",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
